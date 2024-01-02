@@ -1,0 +1,187 @@
+.section-title{
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+
+.section-title h2{
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 0.8;
+    margin-bottom: 0.4rem;
+}
+
+
+.section-title p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*! Categories start  */
+
+
+.categories{
+    margin: 4rem 0;
+}
+
+
+.categories .category-list{
+    display: flex;
+    column-gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+}
+/*! Categories end  */
+
+
+/*! Products start  */
+
+.products{
+    margin-bottom: 4rem;
+
+}
+
+
+
+.products .product-list{
+
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 3rem; */
+
+}
+
+/*! Products end  */
+
+
+
+/*! campaign start  */
+
+
+
+.campaigns .campaigns-wrapper{
+    display: flex;
+    gap: 3rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+    
+}
+
+
+/*! campaign end  */
+
+
+
+/*! blog start  */
+
+.blogs{
+    margin-bottom: 3rem;
+}
+
+
+.blogs .blog-list{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+
+}
+
+
+
+@media (max-width: 768px){
+    .blogs .blog-list{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*! blog end  */
+
+
+
+
+
+/*! brand start  */
+
+
+
+.brands{
+
+    margin: 4rem 0;
+}
+
+
+.brands-list{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: var(--border);
+    padding: 3rem 0.5rem;
+}
+
+
+.brands-list li{
+    opacity: 0.4;
+    transition: .2s ease;
+}
+
+
+
+.brands-list li:hover {
+    opacity: 1;
+}
+
+/*! brands end  */
+
+
+
+/*! policy start*/
+
+
+.policy{
+    border: 1px solid #dee0ea;
+    margin-top: 3rem;
+}
+
+.policy-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+.policy-list li{
+    display: flex;
+    padding: 3rem 0;
+    align-items: center;
+    gap: 1rem;
+}
+
+.policy-list li strong{
+
+font-size: 1.5rem;
+
+}
+
+
+.policy-list li i{
+
+    font-size: 4rem;
+
+}
+
+@media (max-width: 1200px){
+
+
+    .policy-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+/*! policy end*/
