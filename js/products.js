@@ -34,20 +34,30 @@ function addTocart(products){
 function productsRoute(){
 
     const productLink = document.getElementsByClassName("product-link");
+    const productImage = document.getElementsByClassName("product-image");
+    
     Array.from(productLink).forEach((button) => {
         button.addEventListener("click", function(e){
             e.preventDefault();
             const id = e.target.dataset.id;
             localStorage.setItem("productId", JSON.stringify(id))
             window.location.href = "single-product.html";
+            console.log(id);
         })
     })
-    
+    Array.from(productImage).forEach((image) =>{
+        image.addEventListener("click", function(e){
+            e.preventDefault()
+            const id = e.target.dataset.id;
+            localStorage.setItem("productId", JSON.stringify(id))
+            window.location.href = "single-product.html";
 
-
-
+        })
+    })
 
 }
+
+
 
 
 
@@ -63,17 +73,19 @@ function productsFunction(products){
     products.forEach((item) =>{
         results += `              
     <li class="product-item ">
-        <div class="product-image">
+        <div class="product-image " >
             <a href="#">
             <img
                 src=${item.img.singleImage}
                 alt=""
                 class="image1"
+                data-id =${item.id}
             />
             <img
                 src=${item.img.thumbs[1]}
                 alt=""
                 class="image2"
+                data-id =${item.id}
             />
             </a>
         </div>
